@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
 
-  $('textarea').on('keypress', function(e) {
+  $('textarea').on('keydown', function(e) {
 
     var char = $('textarea').val().length;
 
@@ -15,7 +15,7 @@ $( document ).ready(function() {
 
     }else{
 
-      $(this).siblings('.counter').text(x);
+      $(this).siblings('.counter').text(x).css("color","black");
 
     }
 
