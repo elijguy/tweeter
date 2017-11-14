@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
-  </head>
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-  <body>
+  <!-- External JS -->
+  <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-    <!-- Top nav bar (fixed) -->
-    <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png">
-      <span class="header">Tweeter</span>
-    </nav>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/app.js"></script>
+</head>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-    <p>Blue boy, worried about the world's eyes
-Worried every time the sun shines
-Worried about his haircut
-Calm down, sweetheart, grow up
+<body>
 
-Blue boy [x4]
+  <!-- Top nav bar (fixed) -->
+  <nav id="nav-bar">
+    <img class="logo" src="/images/bird.png">
+    <span class="header">Tweeter</span>
+  </nav>
 
-Blue boy, older than the world knows
-Honey, that's the way that life goes
-No use acting so tough
-Calm down, sweetheart, grow up
-
-Blue boy [x4]</p>
-    <p>Blue boy, worried about the world's eyes
-Worried every time the sun shines
-Worried about his haircut
-Calm down, sweetheart, grow up
-
-Blue boy [x4]
-
-Blue boy, older than the world knows
-Honey, that's the way that life goes
-No use acting so tough
-Calm down, sweetheart, grow up
-
-Blue boy [x4]</p>
-    </main>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
 
 
-  </body>
+
+   <section class="new-tweet">
+    <h2>Compose Tweet</h2>
+    <form method="POST" action="/tweets">
+
+
+      <textarea name="text" placeholder="What are you humming about?"></textarea>
+      <input type="submit" value="Tweet">
+      <span class="counter">140</span>
+
+
+    </form>
+  </section>
+
+
+
+</main>
+
+
+</body>
 </html>
