@@ -12,11 +12,7 @@
 
 
 
-
 section.new-tweet{
-
-
-
 
   width: 400px;
   background-color: #c1c1c1;
@@ -39,5 +35,4 @@ textarea{
 span.counter{
 
 float: right;
-
 }

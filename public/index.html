@@ -15,53 +15,137 @@
 
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+  <link rel="stylesheet" href="/styles/alltweets.css" type="text/css" />
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-
+  <script type="text/javascript" src="/scripts/mouseover.js"></script>
   <!-- External JS -->
   <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
-
-
-
-
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/app.js"></script>
+
 </head>
 
-<body>
 
+
+
+
+
+<body>
   <!-- Top nav bar (fixed) -->
   <nav id="nav-bar">
+
     <img class="logo" src="/images/bird.png">
+
     <span class="header">Tweeter</span>
+
   </nav>
+
+
+
+
 
   <!-- Page-specific (main) content here -->
   <main class="container">
 
 
-
-   <section class="new-tweet">
-    <h2>Compose Tweet</h2>
-    <form method="POST" action="/tweets">
+    <section class="new-tweet">
 
 
-      <textarea name="text" placeholder="What are you humming about?"></textarea>
-      <span class="counter">140</span>
-      <input type="submit" value="Tweet">
+      <h2>Compose Tweet</h2>
+
+
+      <form method="POST" action="/tweets">
+
+
+        <textarea name="text" placeholder="What are you humming about?"></textarea>
+
+        <span class="counter">140</span>
+
+        <input type="submit" value="Tweet">
+
+
+      </form>
+
+
+    </section>
 
 
 
-    </form>
-  </section>
+    <article>
+
+      <header>
+
+          <p class="at"> @kingclovis</p>
+
+          <img class="smiles" src="/images/smile.png" width="40px" height="40px">
+
+          <h2 class="username">Name</h2>
+
+      </header>
+
+      <p class="pcontent">
+        Verse 1]
+        Blue Boy, worried 'bout the world's eyes
+        Worried, every time the sun shines
+
+        Worried
+        About his
+        Haircut
+
+        Calm down
+        Sweetheart
+        Grow up
+
+        [Chorus]
+        Blue Boy
+        Blue Boy
+        Blue Boy
+        Blue Boy
+
+        [Verse 2]
+        Blue Boy, older than the world knows
+        Honey, that's the way that life goes
+
+        No use
+        Acting
+        So tough
 
 
 
-</main>
 
+      </p>
+
+      <footer>
+
+        <img class="heart" src="/images/heart.png" width="15px" height="15px">
+        <img class="retweet" src="/images/retweet.png" width="20px" height="20px">
+        <img class="flag" src="/images/flag.png" width="20px" height="20px">
+
+        <p>
+          10 days ago
+        </p>
+
+
+
+
+       </footer>
+
+
+    </article>
+
+
+
+
+
+
+
+
+
+  </main>
 
 </body>
 </html>

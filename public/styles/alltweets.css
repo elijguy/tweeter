@@ -1,0 +1,56 @@
+article header {
+  background-color: #d6d6d6;
+  margin:0;
+  padding:5px;
+  color: #4e7272;
+}
+article header h2{
+float:top;
+}
+.pcontent{
+  padding:5px;
+}
+
+.at {
+
+float: right;
+}
+
+header img{
+  float:left;
+}
+footer img{
+  display: none;
+  float: right;
+}
+
+
+footer{
+
+border-top: solid;
+border-width: 1px;
+border-color:#d6d6d6;
+
+}
+
+
+
+article{
+border-color: #919191;
+border-radius: 5px;
+border-style: solid;
+border-width:1px;
+background-color: #ffffff
+width:400px;
+padding: 1px;
+margin:25px;
+
+}
+/*section.alltweet{
+
+  width: 400px;
+  background-color: #c1c1c1;
+  border-radius: 5px;
+  margin:auto;
+}*/
+
