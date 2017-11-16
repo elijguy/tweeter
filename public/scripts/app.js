@@ -7,7 +7,59 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-$(function(){
+
+
+
+$(document).ready(function(){
+
+   $(".container form").on("submit",function(event){
+
+        event.preventDefault();
+        console.log( $( this ).serialize() );
+
+    if (($('textarea').val().length) > 140) {
+      alert("ERROR: Tweet too long");
+
+    }
+
+    if (($('textarea').val().length) === 0) {
+      alert("ERROR: Tweet too short");
+    } else if(($('textarea').val().length) < 140){
+
+
+
+
+        function loadtweets(){
+          $.ajax({
+            url: "/tweets",
+            method: "GET",
+            success: function(data){
+              renderTweets(data);
+
+            }
+          })
+        }
+
+
+          $.ajax({
+              url: "/tweets",
+              method: "POST",
+              data: $(this).serialize(),
+              success: function(){
+                console.log("ok");
+                loadtweets();
+              }
+          })
+
+
+
+
+
+      }
+
+
+    });
+
 
 
 function escape(str) {
@@ -20,7 +72,7 @@ function escape(str) {
 
 
 
-
+/*
 
 var data = [
   {
@@ -67,7 +119,7 @@ var data = [
     },
     "created_at": 1461113796368
   }
-];
+];*/
 
 
 var createTweetElement = ((tweetobj) => {
@@ -144,8 +196,8 @@ $('.tweets-container').append(x);
 });
 
 });
-
-renderTweets(data);
+/*
+renderTweets(data);*/
 
 
 

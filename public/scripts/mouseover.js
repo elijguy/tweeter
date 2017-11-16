@@ -11,4 +11,8 @@ $(document).ready(function(){
         $(".heart").hide();
         $(".flag").hide();
     });
+
+
 });
+
+
