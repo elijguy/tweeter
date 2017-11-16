@@ -13,7 +13,7 @@
 
 
 section.new-tweet{
-
+  display: none;
   width: 400px;
   background-color: #c1c1c1;
   border-radius: 5px;

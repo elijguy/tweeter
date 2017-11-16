@@ -30,6 +30,7 @@ $(document).ready(function(){
 
 
         function loadtweets(){
+          $(".tweets-container").empty();
           $.ajax({
             url: "/tweets",
             method: "GET",
@@ -48,6 +49,8 @@ $(document).ready(function(){
               success: function(){
                 console.log("ok");
                 loadtweets();
+                $(".textinput").val("");
+                $(".counter").text(140);
               }
           })
 
@@ -189,8 +192,9 @@ return $tweet;
 var renderTweets = ((arrayoftweet) => {
 
 arrayoftweet.forEach((object) => {
+
 var x = createTweetElement(object);
-$('.tweets-container').append(x);
+$('.tweets-container').prepend(x);
 
 
 });
