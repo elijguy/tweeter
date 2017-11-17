@@ -15,6 +15,7 @@ html {
 body {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #eee;
+
 }
 
 p{
@@ -26,4 +27,5 @@ main {
   width: 450px;
   height: calc(100vh - 80px);
   padding-top: 20px;
+  overflow: scroll;
 }

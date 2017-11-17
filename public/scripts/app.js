@@ -2,6 +2,12 @@
 
 $(document).ready(function(){
 
+
+/*on submit of new tweet in compose text area
+checks the length of text input and returns error
+if the value of the length is larger then 140 or if text
+area is left empty*/
+
   $(".container form").on("submit",function(event){
 
     event.preventDefault();
@@ -22,7 +28,9 @@ $(document).ready(function(){
 
     } else if(($('textarea').val().length) < 140){
 
-
+/*text data, after the tests are passed
+ is sent to ajax post request which on success,
+ posts the data to the /tweets URL,*/
 
       function loadtweets(){
 
@@ -42,6 +50,8 @@ $(document).ready(function(){
 
         })
       }
+      /*ajax get request recieves the data from the URL
+      and inserts it into a function called renderTweets(Go to line 170)*/
 
 
         $.ajax({
@@ -157,7 +167,8 @@ $(document).ready(function(){
   });
 
 
-
+/*rendertweets passes the data to function createTweetElement,
+which runs through the data and creates the DOM structure of the tweet*/
   var renderTweets = ((arrayoftweet) => {
 
     arrayoftweet.forEach((object) => {
@@ -166,7 +177,7 @@ $(document).ready(function(){
       var x = createTweetElement(object);
 
       $('.tweets-container').prepend(x);
-
+//the DOM structure or "the tweet", is prepended to the section found in index.html on line 78
 
     });
 
