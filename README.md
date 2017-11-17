@@ -26,8 +26,12 @@ Hover action of tweets which hides/shows non functional favourite, flag and retw
 
 ## Screenshots
 
-!["Compose button hover and autofocus functionality"](https://github.com/elijguy/tweeter/blob/master/docs/composebutton.png?raw=true)
 !["Limit of textarea reached"](https://github.com/elijguy/tweeter/blob/master/docs/counter.png?raw=true)
+
+!["Compose button hover and autofocus functionality"](https://github.com/elijguy/tweeter/blob/master/docs/composebutton.png?raw=true)
+
+
+
 !["Tweet icons hover functionality"](https://github.com/elijguy/tweeter/blob/master/docs/icons.png?raw=true)
 
 ## Dependencies
