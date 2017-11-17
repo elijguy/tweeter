@@ -24,7 +24,7 @@ Hover action of tweets which hides/shows non functional favourite, flag and retw
 5. Press "Compose New Tweet" button to get started!
 
 
-##Screenshots
+## Screenshots
 
 !["Compose button hover and autofocus functionality"](https://github.com/elijguy/tweeter/blob/master/docs/composebutton.png?raw=true)
 !["Limit of textarea reached"](https://github.com/elijguy/tweeter/blob/master/docs/counter.png?raw=true)
