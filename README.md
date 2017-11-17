@@ -12,7 +12,7 @@ A scrollable feed of previously posted tweets.
 
 A button which hides and shows the textarea input for readability of tweets,
 
-As well as hover action of tweets which hides/shows non functional favourite, flag and retweet buttons.
+Hover action of tweets which hides/shows non functional favourite, flag and retweet buttons.
 
 
 ## Getting Started
