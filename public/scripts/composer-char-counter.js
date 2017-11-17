@@ -1,7 +1,10 @@
 
 $( document ).ready(function() {
 
-  $('textarea').on('keydown', function(e) {
+//counter number functionality
+
+
+  $('textarea').on('keyup', function(e) {
 
     var char = $('textarea').val().length;
 
@@ -20,10 +23,6 @@ $( document ).ready(function() {
     }
 
   });
-
-
-
-
 
 
 

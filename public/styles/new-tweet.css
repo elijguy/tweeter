@@ -1,16 +1,14 @@
+
+/*tweet box styling*/
+
+
+
 .new-tweet h2 {
   border-bottom: 1px solid black;
   margin:0;
   padding:5px;
   color: #286647;
 }
-
-
-
-
-
-
-
 
 section.new-tweet{
   display: none;
@@ -21,7 +19,7 @@ section.new-tweet{
 }
 
 form{
-width:100%;
+  width:100%;
 }
 
 textarea{
@@ -33,6 +31,5 @@ textarea{
 
 
 span.counter{
-
-float: right;
+  float: right;
 }

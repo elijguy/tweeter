@@ -1,4 +1,4 @@
-
+/*tweet content styling*/
 
 
 article header {
@@ -7,21 +7,23 @@ article header {
   padding:5px;
   color: #4e7272;
 }
+
 article header h2{
-float:top;
+  float:top;
 }
+
 .pcontent{
   padding:5px;
 }
 
 .at {
-
-float: right;
+  float: right;
 }
 
 header img{
   float:left;
 }
+
 footer img{
   display: none;
   float: right;
@@ -29,31 +31,34 @@ footer img{
 
 
 footer{
-
-border-top: solid;
-border-width: 1px;
-border-color:#d6d6d6;
-
+  border-top: solid;
+  border-width: 1px;
+  border-color:#d6d6d6;
 }
 
 
 
 article{
-border-color: #919191;
-border-radius: 5px;
-border-style: solid;
-border-width:1px;
-background-color: #ffffff
-width:400px;
-padding: 1px;
-margin:25px;
-
-}
-/*section.alltweet{
-
-  width: 400px;
-  background-color: #c1c1c1;
+  border-color: #919191;
   border-radius: 5px;
-  margin:auto;
-}*/
+  border-style: solid;
+  border-width:1px;
+  background-color: #ffffff
+  width:400px;
+  padding: 1px;
+  margin:25px;
+  word-wrap: break-word;
+}
+
+
+article:hover {
+  border-width:1px;
+  border-color:black;
+}
+
+article:hover footer img{
+  display:block;
+}
+
+
 
