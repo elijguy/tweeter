@@ -91,7 +91,7 @@ $(document).ready(function(){
 
   var createTweetElement = ((tweetobj) => {
 
-
+    var timefromnow = (moment(tweetobj.created_at).fromNow());
 
     var $tweet = $("<article>").addClass("article");
 
@@ -145,7 +145,7 @@ $(document).ready(function(){
 
     $($footer).append($timestamp);
 
-    $($timestamp).append(`${escape(tweetobj.created_at)}`);
+    $($timestamp).append(`${(timefromnow)}`);
 
 
 
