@@ -1,8 +1,19 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple program which mimics a twitter feed where users can post tweets anonymously.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+This program uses a mongodb database to store the tweets.
+
+The program consists of:
+
+A textarea for user input, which is limited to 140 characters.
+
+A scrollable feed of previously posted tweets.
+
+A button which hides and shows the textarea input for readability of tweets,
+
+As well as hover action of tweets which hides/shows non functional favourite, flag and retweet buttons.
+
 
 ## Getting Started
 
@@ -10,8 +21,9 @@ This repository is the starter code for the project: Students will fork and clon
 2. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
+5. Press "Compose New Tweet" button to get started!
 
 ## Dependencies
-
+- Moment.js
 - Express
 - Node 5.10.x or above
